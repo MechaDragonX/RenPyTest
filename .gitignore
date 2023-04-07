@@ -1,0 +1,22 @@
+cache/
+saves/
+
+# Compiled output
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+*.rpyc
+*.rpymc
+
+# logs
+log.txt
+errors.txt
+traceback.txt
+files.txt
+
+# VS Code
+.vscode/
