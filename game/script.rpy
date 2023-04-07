@@ -126,7 +126,7 @@ label start:
         show byakuya neutral
         byakuya 'Why do we know Leon Kuwata is the culprit?'
         menu:
-            'The vitim left a message in blood.':
+            'The victim left a message in blood.':
                 jump blood
             'Wait...he is...??':
                 jump confused
@@ -160,15 +160,18 @@ label start:
         label leon:
             shuichi 'While it seems like the numbers "11037", if you were to flip it upside down, you\'d see that it spells out "LEON".'
             play sound 'audio/sfx/general/got_it.ogg'
-            shuichi 'Daming evidence that Leon Kuwata is the culprit!'
+            shuichi 'Damning evidence that Leon Kuwata is the culprit!'
             show byakuya smirk
             play sound 'audio/sfx/byakuya/naturally.ogg'
-            byakuya 'Daming evidence indeed!'
+            byakuya 'Damning evidence indeed!'
             jump end
     label end:
+        show byakuya neutral
+        play sound 'audio/sfx/general/bell.ogg'
+        'It we seems we just made it...'
         show byakuya leave
         play sound 'audio/sfx/byakuya/lets_go.ogg'
-        byakuya 'Let\'s go. Monokuma will begin the class trial soon.'
+        byakuya 'Let\'s go. It\'s time to put an end to this farce.'
         shuichi 'Right.'
 
     # This ends the game.
